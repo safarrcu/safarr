@@ -62,7 +62,7 @@
     </section>
     <div class="container into">
       <header>
-        <h1>Travel Games: Fun for All</h1>
+        <h1><b>Travel Games: Fun for All</b></h1> <br>
         <div class="header-content">
           <img
             src="https://i.ibb.co/PMbH4zL/ba422349-9803-4209-a8f4-a562145fce6f.jpg"
@@ -143,7 +143,7 @@
     </div>
     <div class="center center2">
       <div class="wrap">
-        <button onclick="downloadPackingList()" class="button">
+        <button onclick="downloadPackingList()" id="downloadBtn" class="button">
             Download Guide
         </button>
       </div>
@@ -250,7 +250,15 @@ display: none;
 <!-- Footer -->
 
     <script>
-      function downloadPackingList() {
+
+// Get the button
+const downloadLink = "https://drive.google.com/uc?export=download&id=14yUIXDgtRKWbhMgxcqnimYPONDAyQcq0";
+
+document.getElementById('downloadBtn').addEventListener('click', () => {
+  window.location.href = downloadLink;
+});
+
+      function adownloadPackingList() {
         const packingList = `Welcome to Safarr
 .
 .
@@ -307,7 +315,7 @@ Perfect for music lovers, this game challenges players to guess songs based on s
       }
     </script>
     <!-- chat bot  -->
-    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
-    <script src="https://mediafiles.botpress.cloud/15c2d1e3-3ccf-4f85-ace7-84cbf052d6ee/webchat/v2.1/config.js"></script>
+    <!-- <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/15c2d1e3-3ccf-4f85-ace7-84cbf052d6ee/webchat/v2.1/config.js"></script> -->
   </body>
 </html>

@@ -61,7 +61,7 @@
   </section>
     <div class="container into">
         <header>
-            <h1>Culture: Eat Your Way Around</h1>
+            <h1><b>Culture: Eat Your Way Around</b></h1> <br>
             <div class="header-content">
                 <img
                     src="https://i.ibb.co/Q7Bn66s/d25e129f-1189-4f70-a49e-5889a875e47b.jpg"
@@ -168,7 +168,7 @@
     </div>
     <div class="center center2">
         <div class="wrap">
-          <button onclick="downloadPackingList()" class="button">
+          <button onclick="downloadPackingList()" id="downloadBtn" class="button">
               Download Guide
           </button>
         </div>
@@ -277,7 +277,12 @@
 
     <!-- JavaScript Files -->
     <script>
-        function downloadPackingList() {
+const downloadLink = "https://drive.google.com/uc?export=download&id=1e9xn1jaMy-_aP5SIeaNiTHG-Bjn9NWLY";
+
+document.getElementById('downloadBtn').addEventListener('click', () => {
+  window.location.href = downloadLink;
+});
+        function adownloadPackingList() {
           const packingList = `Welcome to Safarr
   .
   .
@@ -366,7 +371,7 @@ So, the next time you travel, let your taste buds lead the way. Embrace the culi
       </script>
 
       <!-- chat bot  -->
-    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
-    <script src="https://mediafiles.botpress.cloud/15c2d1e3-3ccf-4f85-ace7-84cbf052d6ee/webchat/v2.1/config.js"></script>
+    <!-- <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/15c2d1e3-3ccf-4f85-ace7-84cbf052d6ee/webchat/v2.1/config.js"></script> -->
 </body>
 </html>

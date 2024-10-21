@@ -62,7 +62,7 @@
     </section>
     <div class="container into">
       <header>
-        <h1>Adventure: Pack Like a Pro</h1>
+        <h1><b>Adventure: Pack Like a Pro</b></h1> <br>
         <div class="header-content">
           <img
             src="https://i.ibb.co/411rGy1/b70c99e2-d4ce-4dc8-8c7f-228cd8e4036b.jpg"
@@ -250,7 +250,7 @@
     </div>
     <div class="center center2">
       <div class="wrap">
-        <button onclick="downloadPackingList()" class="button">
+        <button onclick="downloadPackingList()" id="downloadBtn" class="button">
             Download Guide
         </button>
       </div>
@@ -357,7 +357,14 @@ display: none;
 <!-- Footer -->
 
     <script>
-      function downloadPackingList() {
+
+const downloadLink = "https://drive.google.com/uc?export=download&id=1Dg2nleT2nIQR4HJBj7VHJv3gSatOyDhf";
+
+    document.getElementById('downloadBtn').addEventListener('click', function () {
+      window.location.href = downloadLink;
+    });
+
+      function adownloadPackingList() {
         const packingList = `Welcome to Safarr
 .
 .
@@ -432,7 +439,7 @@ Whether you’re summiting a mountain or navigating a foreign city, these tips w
       }
     </script>
     <!-- chat bot  -->
-    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
-    <script src="https://mediafiles.botpress.cloud/15c2d1e3-3ccf-4f85-ace7-84cbf052d6ee/webchat/v2.1/config.js"></script>
+    <!-- <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/15c2d1e3-3ccf-4f85-ace7-84cbf052d6ee/webchat/v2.1/config.js"></script> -->
   </body>
 </html>

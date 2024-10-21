@@ -65,7 +65,7 @@
    
 <div class="container into">
         <header>
-          <h1>Buget: Save Big While Traveling</h1>
+          <h1><b>Buget: Save Big While Traveling</b></h1> <br>
           <div class="header-content">
             <img
               src="https://i.ibb.co/L1QHkst/272e01d3-22f2-4a13-a5f7-265ebeaa7c57.jpg"
@@ -191,7 +191,7 @@
     </div>
     <div class="center center2">
         <div class="wrap">
-          <button onclick="downloadPackingList()" class="button">
+          <button onclick="downloadPackingList()" id="downloadBtn" class="button">
               Download Guide
           </button>
         </div>
@@ -293,7 +293,19 @@ content: '';
 }
       </style>
 <script>
-    function downloadPackingList() {
+    
+
+    
+const downloadLink = "https://drive.google.com/uc?export=download&id=1UHZjngiXAgjILW8l-GXW77p7g-W35H9h";
+
+document.getElementById('downloadBtn').addEventListener('click', function () {
+  window.location.href = downloadLink;
+});
+
+
+
+
+    function adownloadPackingList() {
       const packingList = `Welcome to Safarr
 .
 .
@@ -386,8 +398,8 @@ Pro Tip: Use packing cubes to organize your belongings and maximize space in you
     <script src="js/script.js"></script>
     <script src="js/formoid.min.js"></script>
 <!-- chat bot  -->
-<script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/15c2d1e3-3ccf-4f85-ace7-84cbf052d6ee/webchat/v2.1/config.js"></script>
+<!-- <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/15c2d1e3-3ccf-4f85-ace7-84cbf052d6ee/webchat/v2.1/config.js"></script> -->
   </body>
 
 </html>
