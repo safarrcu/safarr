@@ -9,6 +9,7 @@
 body {
   margin: 0;
   font-family: Nunito, sans-serif;
+  background-color: rgb(244, 252, 255) !important;
 }
 
 .bi {
@@ -57,8 +58,15 @@ body {
 }
 
 .responsive-container-block {
+  /* min-height: 75px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto; */
   min-height: 75px;
   width: 100%;
+  max-width: 1200px; /* Limits the width on larger screens */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -157,8 +165,50 @@ body {
   /* Similar structure for other widths */
 }
 
+/* @media (max-width: 768px) {
+  .responsive-container-block {
+    background-color: rgb(20, 47, 57);
+    text-align: center;
+    display: block;
+    padding: 20px; /* Adds some space around the content 
+  }
+
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .team-card {
+    width: 100%;
+    max-width: 400px; /* Limits the card size for readability 
+    margin: 10px auto;
+  }
+
+  .img-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .team-img {
+    width: 80%; /* Adjusts image size on smaller screens 
+    border-radius: 50%;
+  }
+} */
+
 @media (max-width: 768px) {
-  /* Similar structure for other widths */
+  .responsive-container-block{
+    text-align: center;
+    display: block;
+
+  }
+  .team-card{
+    width: 400%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
 }
 
 @media (max-width: 500px) {
