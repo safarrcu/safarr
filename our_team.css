@@ -199,14 +199,14 @@ body {
 
 @media (max-width: 768px) {
   .responsive-container-block{
-    text-align: center;
-    display: block;
+    text-align: center !important;
+    display: block !important;
 
   }
   .team-card{
-    width: 400%;
-    text-align: center;
-    margin: 0 auto;
+    width: 400% !important;
+    text-align: center !important;
+    margin: 0 auto !important;
   }
 
 }
