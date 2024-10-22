@@ -783,8 +783,8 @@ a {
 }
 @media (max-width: 767px) {
   .container-fluid {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 }
 .cid-ukF9jwpTl6 {
